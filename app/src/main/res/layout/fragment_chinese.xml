@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chinese.ChineseFragment">
+
+    <!--navigation을 통해 선택되면 보여줄 화면인 ListView를 선언한 xml파일이다. -->
+
+    <ListView
+        android:id="@+id/chineselist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

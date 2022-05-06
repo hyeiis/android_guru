@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recipe">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_widget"
+        android:label="EasyCook"
+        android:roundIcon="@mipmap/ic_widget_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Recipe">
+        <receiver android:name=".NewAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity android:name=".PastaRecipe" />
+        <activity android:name=".SaladRecipe" />
+        <activity android:name=".Ddeokguk" />
+        <activity android:name=".DorajiRecipe" />
+        <activity android:name=".JjigaeRecipe" />
+        <activity android:name=".BibimbabRecipe" />
+        <activity android:name=".chinese" />
+        <activity android:name=".Mypage" />
+        <activity android:name=".ButadoneRecipe" />
+        <activity android:name=".chaRecipe" />
+        <activity android:name=".DongpaRecipe" />
+        <activity android:name=".EggRecipe" />
+        <activity android:name=".MapaRecipe" />
+        <activity android:name=".NebeRecipe" />
+        <activity android:name=".UdonRecipe" />
+        <activity android:name=".DumplingRecipe" />
+        <activity android:name=".FrenchRecipe" />
+        <activity android:name=".PastaRecipe" />
+        <activity android:name=".SaladRecipe" />
+        <activity android:name=".GambasRecipe" />
+
+        <activity
+            android:name=".SideBarActivity"
+            android:label="@string/title_activity_side_bar"
+            android:theme="@style/Theme.Recipe.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".western" />
+        <activity android:name=".korean" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+    </application>
+
+</manifest>

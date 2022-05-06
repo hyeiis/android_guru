@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    //한식, 중식, 일식, 양식 아이콘들과 위에는 앱 아이콘이다.
+
+    <ImageView
+        android:id="@+id/korean_food"
+        android:layout_width="129dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/western_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/japanese_food"
+        app:srcCompat="@drawable/korean" />
+
+    <ImageView
+        android:id="@+id/japanese_food"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toTopOf="@+id/chineseFood"
+        app:layout_constraintEnd_toStartOf="@+id/korean_food"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/japanese" />
+
+    <ImageView
+        android:id="@+id/western_food"
+        android:layout_width="129dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chineseFood"
+        app:srcCompat="@drawable/western" />
+
+    <ImageView
+        android:id="@+id/chineseFood"
+        android:layout_width="146dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/western_food"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chinese" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="291dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

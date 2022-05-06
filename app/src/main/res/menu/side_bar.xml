@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--SideBar에 나올 항목들을 나타낸 xml파일이다. -->
+    <item
+        android:id="@+id/my_page"
+        android:title="마이페이지" />
+    <item
+        android:id="@+id/logout"
+        android:title="로그아웃" />
+    <item
+        android:id="@+id/reg_delete"
+        android:title="탈퇴" />
+</menu>

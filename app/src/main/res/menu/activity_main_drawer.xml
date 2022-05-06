@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--Drawer를 열면 나오는 항목들을 나타낸 xml파일이다.-->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_japanese"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_japanese" />
+        <item
+            android:id="@+id/nav_korean"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_korean" />
+        <item
+            android:id="@+id/nav_chinese"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_chinese" />
+        <item
+            android:id="@+id/nav_western"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_western" />
+    </group>
+</menu>

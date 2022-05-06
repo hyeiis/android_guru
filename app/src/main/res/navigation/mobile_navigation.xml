@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!--각 navigation 항목을 누르면 전환될 수 있도록 fragment을 선언해준 xml파일이다. -->
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.recipe.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_japanese"
+        android:name="com.example.recipe.ui.japanese.JapaneseFragment"
+        android:label="@string/menu_japanese"
+        tools:layout="@layout/fragment_japanese" />
+
+    <fragment
+        android:id="@+id/nav_korean"
+        android:name="com.example.recipe.ui.korean.KoreanFragment"
+        android:label="@string/menu_korean"
+        tools:layout="@layout/fragment_korean" />
+
+    <fragment
+        android:id="@+id/nav_chinese"
+        android:name="com.example.recipe.ui.chinese.ChineseFragment"
+        android:label="@string/menu_chinese"
+        tools:layout="@layout/fragment_chinese" />
+
+    <fragment
+        android:id="@+id/nav_western"
+        android:name="com.example.recipe.ui.western.WesternFragment"
+        android:label="@string/menu_western"
+        tools:layout="@layout/fragment_western" />
+
+</navigation>
